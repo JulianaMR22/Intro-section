@@ -4,7 +4,7 @@
   font-family: "Epilogue", sans-serif;
 }
 .main__container {
-  background-color: hsl(0, 0%, 98%);
+  background-color: rgb(250, 250, 250);
 }
 .main__menu {
   display: flex;
@@ -19,6 +19,7 @@
 }
 .menu__nav {
   display: flex;
+  position: relative;
 }
 .nav__image {
   width: 87px;
@@ -27,7 +28,12 @@
 .list__menu {
   font-size: 16px;
   color: hsl(0, 0%, 41%);
+  padding-top: 7px;
   margin-right: 35px;
+}
+
+.list__menu:hover {
+  color: hsl(0, 0%, 8%);
 }
 
 .menu__arrow {
@@ -40,7 +46,7 @@
 }
 
 .login__item:hover {
-  border: 2px solid hsl(0, 0%, 41%);
+  border: 2px solid hsl(0, 0%, 8%);
   height: 35px;
   width: 93px;
   text-align: center;
@@ -92,15 +98,17 @@
   font-weight: 700;
 }
 
-.imagehero__content {
-  display: flex;
-  justify-content: end;
-  position: absolute;
-  top: 12%;
-  left: 16%;
+.button__content:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
 }
+
 .content__imagehero {
-  width: 39%;
+  width: 28%;
+  right: 13%;
+  top: 12%;
+  position: absolute;
 }
 
 .menu__client {
@@ -116,4 +124,45 @@
 
 .audiophile {
   width: 14%;
+}
+
+.menu__feactures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  padding: 11px;
+  background: #fff;
+  -webkit-box-shadow: -1px 17px 70px -30px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 17px 70px -30px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 17px 70px -30px rgba(0, 0, 0, 0.75);
+  width: 28%;
+  z-index: 1;
+  border-radius: 12px;
+  color: hsl(0, 0%, 41%);
+}
+
+.menu__display-none {
+  display: none;
+}
+
+.feactures__list {
+  list-style: none;
+  line-height: 2;
+  padding: 0;
+}
+
+.list__image {
+  margin-right: 12px;
+}
+.list__image-content {
+  margin-right: 10px;
+}
+
+.menu__company {
+  width: 22%;
+  left: 46%;
+  padding: 5px;
 }
