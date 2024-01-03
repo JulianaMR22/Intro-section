@@ -20,16 +20,27 @@
 .menu__nav {
   display: flex;
   position: relative;
+  justify-content: space-between;
+  width: 100%;
 }
 .nav__image {
   width: 87px;
   height: 28px;
 }
+
+.nav__close {
+  display: none;
+}
+
 .list__menu {
   font-size: 16px;
   color: hsl(0, 0%, 41%);
   padding-top: 7px;
   margin-right: 35px;
+}
+
+.menu__logo {
+  display: none;
 }
 
 .list__menu:hover {
@@ -111,6 +122,10 @@
   position: absolute;
 }
 
+.content__image-responsive {
+  display: none;
+}
+
 .menu__client {
   position: absolute;
   bottom: 8%;
@@ -127,18 +142,13 @@
 }
 
 .menu__feactures {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  top: 55%;
-  left: 15%;
-  padding: 11px;
+  padding: 20px;
   background: #fff;
   -webkit-box-shadow: -1px 17px 70px -30px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 17px 70px -30px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 17px 70px -30px rgba(0, 0, 0, 0.75);
-  width: 28%;
+  width: max-content;
   z-index: 1;
   border-radius: 12px;
   color: hsl(0, 0%, 41%);
@@ -162,7 +172,112 @@
 }
 
 .menu__company {
-  width: 22%;
-  left: 46%;
-  padding: 5px;
+  width: max-content;
+  padding: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .content__imagehero {
+    display: none;
+  }
+
+  .content__image-responsive {
+    display: flex;
+    display: flex;
+    position: absolute;
+    top: 13%;
+    width: 100%;
+  }
+
+  .menu__nav {
+    position: fixed;
+    justify-content: initial;
+    width: 63%;
+    flex-direction: column;
+    z-index: 1;
+    background-color: hsl(0, 0%, 98%);
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .menu__logo {
+    display: flex;
+    position: absolute;
+    right: 22px;
+    width: 8%;
+  }
+  .menu__title {
+    margin-top: 96%;
+    margin-left: 6%;
+  }
+
+  .title__first {
+    font-size: 38px;
+  }
+
+  .title__second {
+    top: 0px;
+    font-size: 38px;
+    left: 30%;
+  }
+
+  .nav__list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-top: 28%;
+  }
+
+  .nav__close {
+    display: flex;
+    width: 10%;
+    position: absolute;
+    right: 9%;
+    top: 3%;
+  }
+
+  .menu__paragraph {
+    width: 93%;
+    top: 157%;
+    text-align: center;
+  }
+
+  .menu__feactures {
+    position: initial;
+    box-shadow: none;
+    background-color: initial;
+  }
+
+  .menu__login {
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .login__item {
+    padding: 15px;
+    padding-top: 0;
+  }
+
+  .list__menu {
+    padding-top: 20px;
+  }
+
+  .login__item:focus {
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+  }
+
+  .menu__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 460%;
+    width: 100%;
+  }
+
+  .menu__client {
+    bottom: 13%;
+  }
 }

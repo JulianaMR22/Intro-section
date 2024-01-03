@@ -20,8 +20,15 @@
   </head>
   <body class="main__container">
     <div class="main__menu">
+      <img
+        src="./images/icon-menu.svg"
+        alt=""
+        class="menu__logo"
+        id="navListMenu"
+      />
+      <img src="./images/logo.svg" alt="" class="nav__image" />
       <div class="menu__nav">
-        <img src="./images/logo.svg" alt="" class="nav__image" />
+        <img src="./images/icon-close-menu.svg" alt="" class="nav__close" />
         <ul class="nav__list">
           <li class="list__menu" id="containerFeactures">
             Feactures
@@ -30,39 +37,44 @@
               alt=""
               class="menu__arrow"
             />
+            <div class="menu__feactures menu__display-none" id="feacturesMenu">
+              <ul class="feactures__list">
+                <li class="list__content">
+                  <img
+                    class="list__image"
+                    src="./images/icon-todo.svg"
+                    alt=""
+                  />
+                  Todo List
+                </li>
+                <li class="list__content">
+                  <img
+                    class="list__image-content"
+                    src="./images/icon-calendar.svg"
+                    alt=""
+                  />
+                  Calendar
+                </li>
+                <li class="list__content">
+                  <img
+                    class="list__image"
+                    src="./images/icon-reminders.svg"
+                    alt=""
+                  />
+                  Reminders
+                </li>
+                <li class="list__content">
+                  <img
+                    class="list__image-content"
+                    src="./images/icon-planning.svg"
+                    alt=""
+                  />
+                  Planning
+                </li>
+              </ul>
+            </div>
           </li>
-          <div class="menu__feactures menu__display-none" id="feacturesMenu">
-            <ul class="feactures__list">
-              <li class="list__content">
-                <img class="list__image" src="./images/icon-todo.svg" alt="" />
-                Todo List
-              </li>
-              <li class="list__content">
-                <img
-                  class="list__image-content"
-                  src="./images/icon-calendar.svg"
-                  alt=""
-                />
-                Calendar
-              </li>
-              <li class="list__content">
-                <img
-                  class="list__image"
-                  src="./images/icon-reminders.svg"
-                  alt=""
-                />
-                Reminders
-              </li>
-              <li class="list__content">
-                <img
-                  class="list__image-content"
-                  src="./images/icon-planning.svg"
-                  alt=""
-                />
-                Planning
-              </li>
-            </ul>
-          </div>
+
           <li class="list__menu" id="containerCompany">
             Company
             <img
@@ -70,25 +82,26 @@
               alt=""
               class="menu__arrow"
             />
+            <div
+              class="menu__feactures menu__company menu__display-none"
+              id="companyMenu"
+            >
+              <ul class="feactures__list">
+                <li class="list__content">History</li>
+                <li class="list__content">Our Team</li>
+                <li class="list__content">Blog</li>
+              </ul>
+            </div>
           </li>
-          <div
-            class="menu__feactures menu__company menu__display-none"
-            id="companyMenu"
-          >
-            <ul class="feactures__list">
-              <li class="list__content">History</li>
-              <li class="list__content">Our Team</li>
-              <li class="list__content">Blog</li>
-            </ul>
-          </div>
+
           <li class="list__menu">Careers</li>
           <li class="list__menu">About</li>
         </ul>
+        <ul class="menu__login">
+          <li class="login__item list__menu">Login</li>
+          <li class="login__item list__menu">Register</li>
+        </ul>
       </div>
-      <ul class="menu__login">
-        <li class="login__item list__menu">Login</li>
-        <li class="login__item list__menu">Register</li>
-      </ul>
     </div>
     <div class="menu__title">
       <h2 class="title__first">Make</h2>
@@ -107,6 +120,11 @@
       src="./images/image-hero-desktop.png"
       alt=""
       class="content__imagehero"
+    />
+    <img
+      src="./images/image-hero-mobile.png"
+      alt=""
+      class="content__image-responsive"
     />
     <div class="menu__client">
       <img src="./images/client-databiz.svg" alt="" class="client__images" />
