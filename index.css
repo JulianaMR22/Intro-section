@@ -188,17 +188,29 @@
     top: 13%;
     width: 100%;
   }
-
+  .close__menu {
+    display: none;
+  }
   .menu__nav {
     position: fixed;
     justify-content: initial;
     width: 63%;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
     background-color: hsl(0, 0%, 98%);
     height: 100%;
     top: 0;
     right: 0;
+  }
+
+  .menu__bg {
+    background-color: rgba(0, 0, 0, 0.327);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
 
   .menu__logo {
@@ -275,6 +287,12 @@
     align-items: center;
     top: 460%;
     width: 100%;
+  }
+
+  .button__content:focus {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
   }
 
   .menu__client {
