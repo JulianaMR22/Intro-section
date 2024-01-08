@@ -220,17 +220,17 @@
     width: 8%;
   }
   .menu__title {
-    margin-top: 94%;
+    margin-top: 90%;
     margin-left: 9%;
   }
 
   .title__first {
-    font-size: 30px;
+    font-size: 31px;
   }
 
   .title__second {
     top: 0px;
-    font-size: 30px;
+    font-size: 31px;
     left: 27%;
   }
 
@@ -251,8 +251,12 @@
 
   .menu__paragraph {
     width: 94%;
-    top: 155%;
+    top: 144%;
     text-align: center;
+  }
+
+  .paragraph__content {
+    font-size: 15px;
   }
 
   .menu__feactures {
@@ -281,15 +285,11 @@
     border-radius: 10px;
   }
 
-  .paragraph__content {
-    font-size: 15px;
-  }
-
   .menu__button {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 470%;
+    top: 415%;
     width: 100%;
   }
 
