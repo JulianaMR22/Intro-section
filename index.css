@@ -225,13 +225,14 @@
   }
 
   .title__first {
+    display: inline-block;
     font-size: 31px;
   }
 
   .title__second {
-    top: 0px;
+    display: inline-block;
+    position: initial;
     font-size: 31px;
-    right: 34px;
   }
 
   .nav__list {
