@@ -220,8 +220,9 @@
     width: 8%;
   }
   .menu__title {
+    text-align: center;
     margin-top: 90%;
-    margin-left: 30px;
+    margin-left: 0;
   }
 
   .title__first {
@@ -251,13 +252,17 @@
   }
 
   .menu__paragraph {
-    width: 94%;
+    width: 100%;
     top: 144%;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .paragraph__content {
     font-size: 15px;
+    text-align: center;
+    width: 100%;
   }
 
   .menu__feactures {
@@ -301,6 +306,6 @@
   }
 
   .menu__client {
-    bottom: 103px;
+    top: 655px;
   }
 }
